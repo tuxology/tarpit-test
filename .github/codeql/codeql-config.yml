@@ -1,0 +1,10 @@
+name: "Tarpit CodeQL Config"
+
+# Disable insecure cookies alerts
+query-filters:
+  - exclude:
+      id: java/insecure-cookie
+
+paths-ignore:
+  - src/test
+  - '**/*.js'
